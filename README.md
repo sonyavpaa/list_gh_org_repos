@@ -21,7 +21,7 @@ npm i
 node list_github_repos.js
 ```
 
-The script will create a json file that holds the repositories with their teams and collaborators with their permissions.
+The script will create a json file that holds the repositories with their teams and collaborators with their permissions + prints output to console.
 
 
 ## Torubelshooting

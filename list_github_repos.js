@@ -110,7 +110,7 @@ async function main() {
     .toLocaleString("fi-FI", { timeZone: "Europe/Helsinki" })
     .replace(/[ .]/g, "-");
 
-    // Print the out put to console.
+    // Print the output to console.
     repositories.forEach(repo => {
       console.log(`Repository: ${repo.repoName}`);
       console.log(`Teams: ${repo.teams}`);

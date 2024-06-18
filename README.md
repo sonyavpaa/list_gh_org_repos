@@ -1,5 +1,5 @@
 # List GH Organization's repositories
-This repo holds a js script witch which you can list Github Organizations repositories using personal access token. The script checks if a certain team (can be set as env variable) is linked to the repository in question, and if it returns true, then the collaborators wont get listed.
+This repo holds a js script witch which you can list Github Organization's repositories using personal access token. The script checks if a certain team (can be set as env variable) is linked to the repository in question, and if it returns true, then the collaborators wont get listed.
 
 The repo holds also .sh file that holds a bash script similar as above. Due to problems with fetchin and listing repository teams the script is still a work in progress.
 

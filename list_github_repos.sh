@@ -54,8 +54,8 @@ for repo in $(get_repositories); do
   # Initialize collaborators array
   collaborators=()
 
-  # Check if Maintenance is included in repository teams
-  if [[ ! " ${teams[@]} " =~ "Maintenance" ]]; then
+  # Check if certain team is included in repository teams
+  if [[ ! " ${teams[@]} " =~ $GITHUB_TEAM ]]; then
     # Fetch collaborators connected to the repository
     while IFS= read -r collaborator; do
       login=$(echo "$collaborator" | jq -r '.login // empty')

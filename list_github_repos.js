@@ -110,6 +110,17 @@ async function main() {
     .toLocaleString("fi-FI", { timeZone: "Europe/Helsinki" })
     .replace(/[ .]/g, "-");
 
+    // Print the out put to console.
+    repositories.forEach(repo => {
+      console.log(`Repository: ${repo.repoName}`);
+      console.log(`Teams: ${repo.teams}`);
+      console.log(`Collaborators:`);
+      repo.collaborators.forEach(user => {
+        console.log(`User: ${user.User}, with access rights: Admin: ${user.Admin}, Push: ${user.Push}, Pull: ${user.Pull}`)
+      });
+      console.log('-----------')
+    })
+
   fs.writeFile(
     `${GITHUB_ORGANIZATION}-repositories-${timestamp}.json`,
     JSON.stringify(repositories),

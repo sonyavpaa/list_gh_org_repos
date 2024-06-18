@@ -1,11 +1,13 @@
-# List GH Organisation's repositories
-A script witch which you can list Github Organizations repositories using personal access token. The script checks if a certain team (can be set as env variable) is linked to the repository in question, and if it returns true, then the collaborators wont get listed.
+# List GH Organization's repositories
+This repo holds a js script witch which you can list Github Organizations repositories using personal access token. The script checks if a certain team (can be set as env variable) is linked to the repository in question, and if it returns true, then the collaborators wont get listed.
+
+The repo holds also .sh file that holds a bash script similar as above. Due to problems with fetchin and listing repository teams the script is still a work in progress.
 
 # To start
 1. Create personal access token (see instructions [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)).
 2. Create .env file and add your token and target organization name there:
 ```env
-GITHUB_TOKEN=YOUR_TOKEN
+GITHUB_TOKEN=YOUR_GH_TOKEN
 GITHUB_ORGANIZATION=GH_ORGANIZATION
 GITHUB_TEAM=GH_TEAM
 ```

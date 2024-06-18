@@ -26,3 +26,35 @@ The script will create a json file that holds the repositories with their teams 
 
 ## Torubelshooting
 To be able to fetch possible collaborators of a repository, the token needs to have write/push access to that repo.
+
+## Bash script
+If youre interested to test the bash script:
+
+1. Check you have the required packages:
+
+- [GitHub Cli](https://cli.github.com/)
+
+- [jq](https://formulae.brew.sh/formula/jq) 
+
+2. Create .cli.env file that holds:
+```env
+GITHUB_TOKEN=YOUR_GH_TOKEN
+GITHUB_ORGANIZATION=GH_ORGANIZATION
+GITHUB_TEAM=GH_TEAM
+```
+
+3. Autheticate to github using gh cli:
+```cli
+gh auth login
+```
+
+3. Make the script executable:
+```cli
+chmod +x list_github_repos.sh
+```
+
+4. Run the script:
+```cli
+./list_github_repos.sh
+```
+

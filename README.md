@@ -5,7 +5,7 @@ The repo holds also .sh file that holds a bash script similar as above. Due to p
 
 ## To start
 1. Create personal access token (see instructions [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)).
-2. Create .env file and add your token and target organization name there:
+2. Create .env file and add your token, target organization and possible gh team name name there:
 ```env
 GITHUB_TOKEN=YOUR_GH_TOKEN
 GITHUB_ORGANIZATION=GH_ORGANIZATION

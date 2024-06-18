@@ -3,7 +3,7 @@ This repo holds a js script witch which you can list Github Organizations reposi
 
 The repo holds also .sh file that holds a bash script similar as above. Due to problems with fetchin and listing repository teams the script is still a work in progress.
 
-# To start
+## To start
 1. Create personal access token (see instructions [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)).
 2. Create .env file and add your token and target organization name there:
 ```env

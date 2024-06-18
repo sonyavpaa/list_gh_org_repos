@@ -38,7 +38,6 @@ If youre interested to test the bash script:
 
 2. Create .cli.env file that holds:
 ```env
-GITHUB_TOKEN=YOUR_GH_TOKEN
 GITHUB_ORGANIZATION=GH_ORGANIZATION
 GITHUB_TEAM=GH_TEAM
 ```
